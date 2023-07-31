@@ -37,13 +37,14 @@
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\VividHelixTestingFramework\Library\ScriptAssemblies\Assembly-CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>..\..\nunit.framework.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.framework.custom">
+      <HintPath>..\..\nunit.framework.custom.dll</HintPath>
     </Reference>
     <Reference Include="nunitlite">
       <HintPath>..\..\nunitlite.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -55,6 +56,10 @@
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>$(UnityInstallFolder)\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

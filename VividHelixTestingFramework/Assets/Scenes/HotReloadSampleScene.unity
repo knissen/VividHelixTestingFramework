@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 101843113}
-  - component: {fileID: 101843112}
+  - component: {fileID: 101843114}
   m_Layer: 0
   m_Name: HotReload
   m_TagString: Untagged
@@ -140,22 +140,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &101843112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 101843111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 185638ba72d27f046a27df33f8f4e9ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AutoReload: 1
-  LogToConsole: 1
-  ForceReloadKey: 32
-  settings: {fileID: 11400000, guid: e507f681789caea43bd161f7a5a6449c, type: 2}
 --- !u!4 &101843113
 Transform:
   m_ObjectHideFlags: 0
@@ -171,6 +155,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &101843114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101843111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de6a986fa2e0f84582ce96a635725c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AutoReload: 1
+  LogToConsole: 1
+  ForceReloadKey: 32
+  settings: {fileID: 11400000, guid: 21dbbafcfa7c8774bb2e2e4ed2ce4399, type: 2}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

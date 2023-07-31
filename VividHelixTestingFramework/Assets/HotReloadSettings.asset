@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d58489cb79965e54c923098fff038fea, type: 3}
+  m_Name: HotReloadSettings
+  m_EditorClassIdentifier: 
+  gameCoreProjectFile: D:/Projects/VividHelixTestingFrameWork/GameCore/GameCore/GameCore.csproj
+  Namespace: VividHelix.HotReload.GameCore
+  ClassName: GameMain
+  DllName: GameCore.dll
+  PdbName: GameCore.pdb
+  DllBytesDirectory: Assets//GameCore//Resources//

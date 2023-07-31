@@ -7,7 +7,6 @@ using System.Threading;
 using UnityEngine;
 using VividHelix.HotReload.GameCore.Models;
 using Debug = UnityEngine.Debug;
-using NUnit.Framework;
 using NUnit.Common;
 using NUnitLite;
 using System.Text;
@@ -18,7 +17,7 @@ namespace VividHelix.HotReload.Tests
     {
         public static TestRunner Instance;
 
-        public KeyCode runTestsKeyCode = KeyCode.RightBracket;
+        public KeyCode runTestsKeyCode = KeyCode.T;
 
         private BlockingCollection<Func<object>> toExecute = new BlockingCollection<Func<object>>();
         private BlockingCollection<object> result = new BlockingCollection<object>();
@@ -52,12 +51,10 @@ namespace VividHelix.HotReload.Tests
             if (runningTests && toExecute.TryTake(out var func))
                 result.Add(func());
 
-#if UNITY_EDITOR
-        if (Input.GetKeyDown(runTestsKeyCode))
-        {
-            RunTestsInThread();
-        }
-#endif
+            if (Input.GetKeyDown(runTestsKeyCode))
+            {
+                RunTestsInThread();
+            }
         }
 
         private void RunTestsInThread()
@@ -83,7 +80,7 @@ namespace VividHelix.HotReload.Tests
                 stopwatch.Start();
 
                 // Set default category
-                var categoryParameter = "cat==WIP";
+                var categoryParameter = "cat==CoreTests";
 
                 var cmdLineCategoryParameter = Environment.GetCommandLineArgs().FirstOrDefault(x => x.StartsWith("cat"));
 
