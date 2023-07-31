@@ -39,12 +39,12 @@
       <HintPath>..\..\VividHelixTestingFramework\Library\ScriptAssemblies\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="nunit.framework.custom">
-      <HintPath>..\..\nunit.framework.custom.dll</HintPath>
+    <Reference Include="nunit.customframework">
+      <HintPath>..\..\VividHelixTestingFramework\Assets\Plugins\nunit.customframework.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunitlite">
-      <HintPath>..\..\nunitlite.dll</HintPath>
+      <HintPath>..\..\VividHelixTestingFramework\Assets\Plugins\nunitlite.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
