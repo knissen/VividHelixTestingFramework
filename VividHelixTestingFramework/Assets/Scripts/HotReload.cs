@@ -34,6 +34,8 @@ namespace VividHelix.HotReload
 
         public void Start()
         {
+            string[] args = Environment.GetCommandLineArgs();
+
             if (settings == null)
             {
                 Debug.LogError("No Settings set for Hot Reload Component. Check for empty reference on component. Run setup from the VividHelix menu to create settings asset.");
@@ -43,9 +45,21 @@ namespace VividHelix.HotReload
                 return;
             }
 
+#if UNITY_EDITOR
             if (!AutoReload)
                 ReloadDLLFile(new Stopwatch(), null, false);
+#else
+            LoadDll(ReadResource(settings.DllName));
+#endif
         }
+
+#if !UNITY_EDITOR && (UNITY_STANDALONE_WIN || UNITY_STANDALONE_LINUX || UNITY_STANDALONE_OSX)
+        private byte[] ReadResource(string name)
+        {
+            var textAsset = (Resources.Load(name) as TextAsset);
+            return textAsset.bytes;
+        }
+#endif
 
         public void Update()
         {
@@ -62,9 +76,9 @@ namespace VividHelix.HotReload
             }
         }
 
-        #endregion
+#endregion
 
-        #region Reload Methods
+#region Reload Methods
 
         private void ReloadDllIfNeeded()
         {
@@ -103,6 +117,6 @@ namespace VividHelix.HotReload
             gameCore.Load(saved);
         }
 
-        #endregion
+#endregion
     } 
 }

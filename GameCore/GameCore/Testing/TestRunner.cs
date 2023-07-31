@@ -50,7 +50,14 @@ namespace VividHelix.HotReload.Tests
             var args = Environment.GetCommandLineArgs();
 
             if (infoDisplay != null)
-                infoDisplay.text = "Command line args: " + args;
+            {
+                infoDisplay.text = "Command line args: ";
+
+                for (int i = 1; i < args.Length; i++)
+                {
+                    infoDisplay.text += args[i] + " ";
+                }
+            }
 
             if (args.Contains("/runTests"))
             {
@@ -70,6 +77,9 @@ namespace VividHelix.HotReload.Tests
 
             if (Input.GetKeyDown(runTestsKeyCode))
             {
+                if(infoDisplay != null)
+                    infoDisplay.text = "Running Tests";
+
                 RunTestsInThread();
             }
         }

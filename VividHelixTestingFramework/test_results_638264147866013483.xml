@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" name="data-000001833E1A5020" fullname="C:/Work/Projects/VividHelixTestingFramework/data-000001833E1A5020" testcasecount="3" result="Failed" start-time="2023-07-31T21:39:46.6583479Z" end-time="2023-07-31T21:39:46.6833486Z" duration="0.024436" total="2" passed="1" failed="1" inconclusive="0" skipped="0" warnings="0" asserts="0" random-seed="994377583">
+  <command-line><![CDATA["C:\Program Files\Unity\Hub\Editor\2021.3.21f1\Editor\Unity.exe" -projectpath C:\Work\Projects\VividHelixTestingFramework\VividHelixTestingFramework -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-Kyle -hubSessionId 0de18892-ef26-4d52-b9fb-401f22671995]]></command-line>
+  <filter>
+    <cat>CoreTests</cat>
+  </filter>
+  <test-suite type="Assembly" id="1005" name="data-000001833E1A5020" fullname="C:/Work/Projects/VividHelixTestingFramework/data-000001833E1A5020" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2023-07-31T21:39:46.6583479Z" end-time="2023-07-31T21:39:46.6833486Z" duration="0.024436" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="4.0.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.19045.0" platform="Win32NT" cwd="C:\Work\Projects\VividHelixTestingFramework\VividHelixTestingFramework" machine-name="DESKTOP-U6KQ4OJ" user="Kyle" user-domain="DESKTOP-U6KQ4OJ" culture="en-CA" uiculture="en-CA" os-architecture="x64" />
+    <settings>
+      <setting name="WorkDirectory" value="C:\Work\Projects\VividHelixTestingFramework\VividHelixTestingFramework" />
+      <setting name="NumberOfTestWorkers" value="16" />
+    </settings>
+    <properties>
+      <property name="_PID" value="20916" />
+      <property name="_APPDOMAIN" value="Unity Child Domain" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1006" name="GameCore" fullname="GameCore" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2023-07-31T21:39:46.6693481Z" end-time="2023-07-31T21:39:46.6833486Z" duration="0.013651" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1007" name="Testing" fullname="GameCore.Testing" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2023-07-31T21:39:46.6693481Z" end-time="2023-07-31T21:39:46.6833486Z" duration="0.013367" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="1000" name="ExampleTests" fullname="GameCore.Testing.ExampleTests" classname="GameCore.Testing.ExampleTests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2023-07-31T21:39:46.6703479Z" end-time="2023-07-31T21:39:46.6823485Z" duration="0.012210" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <properties>
+            <property name="Category" value="CoreTests" />
+          </properties>
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1002" name="TestEmptyFailinggTest" fullname="GameCore.Testing.ExampleTests.TestEmptyFailinggTest" methodname="TestEmptyFailinggTest" classname="GameCore.Testing.ExampleTests" runstate="Runnable" seed="1126541895" result="Failed" start-time="2023-07-31T21:39:46.6723475Z" end-time="2023-07-31T21:39:46.6803476Z" duration="0.007679" asserts="0">
+            <failure>
+              <stack-trace><![CDATA[  at GameCore.Testing.ExampleTests.TestEmptyFailinggTest () [0x00001] in C:\Work\Projects\VividHelixTestingFramework\GameCore\GameCore\Testing\ExampleTests.cs:20 
+]]></stack-trace>
+            </failure>
+            <assertions>
+              <assertion result="Failed">
+                <message><![CDATA[]]></message>
+                <stack-trace><![CDATA[  at GameCore.Testing.ExampleTests.TestEmptyFailinggTest () [0x00001] in C:\Work\Projects\VividHelixTestingFramework\GameCore\GameCore\Testing\ExampleTests.cs:20 
+]]></stack-trace>
+              </assertion>
+            </assertions>
+          </test-case>
+          <test-case id="1001" name="TestEmptyPassingTest" fullname="GameCore.Testing.ExampleTests.TestEmptyPassingTest" methodname="TestEmptyPassingTest" classname="GameCore.Testing.ExampleTests" runstate="Runnable" seed="2039581502" result="Passed" start-time="2023-07-31T21:39:46.6813481Z" end-time="2023-07-31T21:39:46.6813481Z" duration="0.000355" asserts="0" />
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

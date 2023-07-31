@@ -20,4 +20,16 @@ namespace GameCore.Testing
             Assert.Fail();
         }
     }
+
+    [TestFixture]
+    [Category("AlternateTests")]
+    public class AlternateExampleTests
+    {
+        [Test]
+        public void TestAltPassingTest()
+        {
+            Assert.Pass();
+        }
+    }
+
 }
