@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/HotReloadSampleScene.unity
+    guid: e2ebcba39dac0024585ccfa26f9cd950
   m_configObjects: {}

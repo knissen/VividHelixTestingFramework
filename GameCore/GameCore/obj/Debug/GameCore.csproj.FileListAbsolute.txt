@@ -23,3 +23,9 @@ D:\Projects\VividHelixTestingFrameWork\GameCore\GameCore\obj\Debug\GameCore.pdb
 D:\Projects\VividHelixTestingFrameWork\GameCore\GameCore\obj\Debug\GameCore.csprojAssemblyReference.cache
 D:\Projects\VividHelixTestingFrameWork\VividHelixTestingFramework\Assets\GameCore\GameCore.dll
 D:\Projects\VividHelixTestingFrameWork\VividHelixTestingFramework\Assets\GameCore\GameCore.pdb
+C:\Work\Projects\VividHelixTestingFramework\VividHelixTestingFramework\Assets\GameCore\GameCore.dll
+C:\Work\Projects\VividHelixTestingFramework\VividHelixTestingFramework\Assets\GameCore\GameCore.pdb
+C:\Work\Projects\VividHelixTestingFramework\GameCore\GameCore\obj\Debug\GameCore.csproj.AssemblyReference.cache
+C:\Work\Projects\VividHelixTestingFramework\GameCore\GameCore\obj\Debug\GameCore.csproj.CoreCompileInputs.cache
+C:\Work\Projects\VividHelixTestingFramework\GameCore\GameCore\obj\Debug\GameCore.dll
+C:\Work\Projects\VividHelixTestingFramework\GameCore\GameCore\obj\Debug\GameCore.pdb

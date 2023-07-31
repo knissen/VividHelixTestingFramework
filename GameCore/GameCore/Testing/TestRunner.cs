@@ -10,6 +10,7 @@ using Debug = UnityEngine.Debug;
 using NUnit.Common;
 using NUnitLite;
 using System.Text;
+using TMPro;
 
 namespace VividHelix.HotReload.Tests
 {
@@ -24,6 +25,8 @@ namespace VividHelix.HotReload.Tests
         private bool runningTests;
         private bool fromCommandLine;
 
+        private TextMeshProUGUI infoDisplay;
+
         public TestRunner()
         {
             Instance = this;
@@ -33,7 +36,21 @@ namespace VividHelix.HotReload.Tests
         {
             base.Init();
 
+            var viewMarker = Resources.FindObjectsOfTypeAll<ViewMarker>().FirstOrDefault(x => x.name == "InfoDisplay");
+
+            if (viewMarker == null)
+            {
+                Debug.LogError($"Live view marker not found for gameobject: InfoDisplay");
+            }
+            else
+            {
+                infoDisplay = viewMarker.GetComponent<TextMeshProUGUI>();
+            }
+
             var args = Environment.GetCommandLineArgs();
+
+            if (infoDisplay != null)
+                infoDisplay.text = "Command line args: " + args;
 
             if (args.Contains("/runTests"))
             {
