@@ -17,7 +17,6 @@ C:\Work\Projects\Sideloader\VividHelixHotReload\Assets\GameCore\GameCore.pdb
 D:\Projects\VividHelixTestingFrameWork\VividHelixHotReload\Assets\GameCore\GameCore.dll
 D:\Projects\VividHelixTestingFrameWork\VividHelixHotReload\Assets\GameCore\GameCore.pdb
 D:\Projects\VividHelixTestingFrameWork\GameCore\GameCore\obj\Debug\GameCore.csproj.CoreCompileInputs.cache
-D:\Projects\VividHelixTestingFrameWork\GameCore\GameCore\obj\Debug\GameCore.csproj.CopyComplete
 D:\Projects\VividHelixTestingFrameWork\GameCore\GameCore\obj\Debug\GameCore.dll
 D:\Projects\VividHelixTestingFrameWork\GameCore\GameCore\obj\Debug\GameCore.pdb
 D:\Projects\VividHelixTestingFrameWork\GameCore\GameCore\obj\Debug\GameCore.csprojAssemblyReference.cache

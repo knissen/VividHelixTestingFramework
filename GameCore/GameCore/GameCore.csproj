@@ -81,7 +81,9 @@
     <Compile Include="Testing\ExampleTests.cs" />
     <Compile Include="Testing\TestRunner.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include=".editorconfig" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="AfterBuild">
     <Copy SourceFiles="$(OutputPath)\GameCore.dll" DestinationFiles="$(OutputPath)\Resources\GameCore.dll.bytes" />
