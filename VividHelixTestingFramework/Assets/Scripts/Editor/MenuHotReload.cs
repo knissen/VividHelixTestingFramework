@@ -18,7 +18,7 @@ namespace VividHelix.HotReload
 {
     public class MenuHotReload : EditorWindow
     {
-        [MenuItem("VividHelix/Config HotSwap")]
+        [MenuItem("VividHelix/Config Hot Reload")]
         public static void ConfigureHotSwapProject()
         {
             Debug.Log("Running VividHelix HotReload configuration");
@@ -57,6 +57,8 @@ namespace VividHelix.HotReload
             AssetDatabase.SaveAssetIfDirty(settings);
             AssetDatabase.Refresh();
 
+            EditorUtility.DisplayDialog("Config Complete", "Please check settings asset for correct Assembly name and configuration options for project if not using default setup", "Ok");
+
             Selection.activeObject = settings;
         }
 
@@ -93,12 +95,18 @@ namespace VividHelix.HotReload
 
         private static bool TryGetPathForProjectFile(out string projPath)
         {
-            projPath = EditorUtility.OpenFilePanel("Find GameCore Project File", "../", "csproj");
+            if (EditorUtility.DisplayDialog("Locate Project File", "Please locate the csproj file for the GameCore project to configure build outputs", "Ok"))
+            {
+                projPath = EditorUtility.OpenFilePanel("Find GameCore Project File", "../", "csproj");
 
-            if (string.IsNullOrEmpty(projPath))
-                return false;
+                if (string.IsNullOrEmpty(projPath))
+                    return false;
 
-            return true;
+                return true; 
+            }
+
+            projPath = "";
+            return false;
         }
     } 
 }
